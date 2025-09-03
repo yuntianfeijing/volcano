@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM registry-public.lenovo.com/library/golang:1.24-bullseye AS builder
+FROM registry-public.lenovo.com/library/golang:1.24 AS builder
 WORKDIR /go/src/volcano.sh/
 ENV GOPROXY="https://goproxy.cn,direct"
 COPY go.mod go.sum ./
